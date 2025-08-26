@@ -1,0 +1,614 @@
+<!Doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Creativity starts here — Example</title>
+
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --green: #33d1a6;
+      --teal: #15b4b7;
+      --blue: #1f7fe6;
+      --light-blue: #8ee0f0;
+      --muted: #5b6a75;
+      --btn-a: #78d6ee;     
+      --btn-b: #14c39a;      
+      --container-max: 1100px;
+      --radius: 999px;
+    }
+
+
+    body{
+      margin:0;
+      font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color: #24323a;
+      background: #fff;
+      line-height:1.45;
+    }
+
+    .wrap{
+      max-width: var(--container-max);
+      margin: 48px auto;
+      padding: 40px 32px;
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      gap: 40px;
+      align-items: center;
+    }
+
+    
+    .left h1{
+      margin:0 0 18px 0;
+      font-weight:700;
+      font-size:88px;
+      line-height:0.95;
+      letter-spacing: -2px;
+      color: #08b59e; 
+      display:flex;
+      flex-wrap:wrap;
+    }
+
+   
+    .left h1 .word-creativity { 
+        color: #22c6b1; 
+    } 
+    .left h1 .word-starts{ 
+        color: #1f7fe6; 
+    }
+    .left h1 .word-here{ 
+        color: #a7db2f;
+    }
+
+    .text{
+      margin: 12px 0 22px 0;
+      max-width:520px;
+      font-size:16px;
+    }
+
+    
+    .actions{
+      display:flex;
+      flex-direction:column;
+      gap:16px;
+      margin-top:12px;
+    }
+
+    .btn{
+      display:inline-block;
+      text-decoration:none;
+      padding:14px 28px;
+      border-radius: 999px;
+      font-weight:600;
+      width: 220px;
+      text-align:center;
+      box-shadow: 0 6px 18px rgba(16,32,40,0.06);
+    }
+    .btn--primary{
+      background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0)) , var(--btn-a);
+      color: #fff;
+    }
+    .btn--secondary{
+      background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0)), var(--btn-b);
+      color: #fff;
+    }
+
+    .right{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
+    .hero-img{
+      width:100%;
+      max-width:420px;
+      border-radius:6px;
+      box-shadow: 0 6px 20px rgba(16,32,40,0.08);
+      object-fit:cover;
+      display:block;
+    }
+
+    .lang{
+      position: absolute;
+      right: 28px;
+      top: 18px;
+      font-size:12px;
+      color:#6e7a82;
+      letter-spacing:1px;
+    }
+    .lang a { 
+        color: inherit; 
+        text-decoration:none; 
+        margin-left:8px; 
+    }
+
+
+    .texts {
+      margin-top: 2px; 
+      color: yellow;
+      display: block;
+    }
+     
+    .titles {
+        background-color: #1f7fe6;
+        width: 100%;
+        height: 200%;
+    }
+    .headlines {
+        text-align: center;
+        font-size: 40px;
+        font-weight: 400px;
+        margin-top: 10px;
+        background-color: #1f7fe6;
+        width: 100%;
+        height: 100vh;
+    }
+
+    
+    .p p {
+        margin-left: 900px;
+        margin-top: -300px;
+        /* margin-bottom: 500px; */
+    }
+     
+
+     .girl img {
+                margin-top: 250px;
+                margin-left: 50px;
+            }
+
+            .school {
+                margin-top: -650px;
+                margin-left: 900px;
+                font-size: 30px;
+            }
+ 
+            .middle-text p {
+                margin-left: 900px;
+            }
+
+            .large-text {
+                margin-top: 180px;
+                margin-left: 70px;
+                font-size: 30px;
+            }
+
+            .h22 h2{
+                margin-left: 70px;
+            }
+
+            .little-text p {
+                margin-left: 70px;
+            }
+
+            .girls {
+                margin-top: -700px;
+            }
+            .girls img {
+                margin-left: 900px;
+                /* margin-top: -1000px; */
+            }
+
+    .container-img {
+      width: 100%;
+      margin-top: 30px;
+    }
+    .container-img img {
+      width: 100%;
+      height: auto; 
+      display: block; 
+    }
+
+    /* 2-page */
+    .section {
+        margin-top: 200px;
+        margin-left: 70px;
+    }
+    .tittle {
+      margin-top: -500px;
+      margin-left: 700px;
+      font-size: 60px;
+      color: #0d6efd; 
+      font-family: Arial, sans-serif;
+    }
+      .block {
+      display: block;  
+    }
+    
+    .tittle span {
+      margin-top: 5px;
+    }
+    
+   .right-tittle {
+    margin-left: 700px;
+   }
+
+   .right-title  p{
+    margin-top: -100px;
+    margin-left: 700px;
+   }
+
+   .tittles {
+    margin-left: 700px;
+   }
+
+   .tittles p {
+    margin-top: -150px;
+   }
+   .tittles span {
+    display: block;
+   }
+
+   .btnn {
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    border: 1 solid #0d6efd;
+    background-color: #0d6efd;
+    color: white;
+    margin-left: 700px;
+    margin-top: 80px;
+    cursor: pointer;
+   }
+   
+    .btnn:hover {
+      background-color: #95a6c0;
+      transform: scale(1.05);
+    }
+
+/* 3-page */
+    .headlin h1{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #0d6efd;
+      font-size: 60px;
+      margin-top: 100px;
+    }
+
+    .headlin h2{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: black;
+      font-size: 60px;
+      margin-top: 52px;
+    }
+
+    .button {
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    border: 1 solid #0d6efd;
+    background-color: #0d6efd;
+    color: white;
+    margin-left: 500px;
+    margin-top: 20px;
+    cursor: pointer;
+   }
+   
+    .button:hover {
+      background-color: #95a6c0;
+      transform: scale(1.05);
+    }
+
+    .btton {
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    border: 1 solid #0d6efd;
+    background-color: #0d6efd;
+    color: white;
+    margin-left: 250px;
+    margin-top: 20px;
+    cursor: pointer;
+   }
+   
+    .btton:hover {
+      background-color: #95a6c0;
+      transform: scale(1.05);
+    }
+
+
+    /* 4-page */
+    .footer {
+      margin-top: 80px;
+      background-color: #08294D;
+      width: 100%;
+      height: 60vh;
+      margin-left: -10px;
+    
+    }
+
+    .footer img {
+      margin-left: 70px;
+      margin-top: 20px;
+    }
+
+    .containers {
+      width: 90%;
+      margin: auto;
+    } 
+
+    .footer-row {
+      display: flex;
+      gap: 50px;
+      flex-wrap: wrap;
+      margin-top: 100px;
+    }
+
+    .footers {
+      width: 200px;
+    }
+
+     .footers h4 {
+       font-size: 18px;
+       margin-bottom: 15px;
+       position: relative;
+       border-left: 3px solid white;
+       padding-left: 10px;
+    } 
+
+      .footers ul {
+        list-style: none;
+    }
+ 
+     .footers ul li {
+       margin-bottom: 10px;
+    }
+
+     .footers ul li a {
+       color: #d0d0d0;
+       text-decoration: none;
+       transition: 0.3s;
+    }
+
+     .footers ul li a:hover {
+       color: white;
+    }
+
+    @media (max-width: 768px) {
+    .footer-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footers {
+        width: 100%;
+        max-width: 300px;
+        text-align: left;
+    }
+}
+
+
+
+@media (max-width: 1200px) {
+  .wrap {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .hero-img {
+    max-width: 320px;
+  }
+  .left h1 {
+    font-size: 60px;
+    justify-content: center;
+  }
+  .text {
+    margin: 0 auto;
+  }
+  .actions {
+    align-items: center;
+  }
+}
+
+
+@media (max-width: 992px) {
+  .headlines {
+    font-size: 28px;
+    padding: 20px;
+  }
+  .school h1, .large-text h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+  .middle-text p, .little-text p {
+    margin: 20px;
+    font-size: 14px;
+  }
+  .girl img, .girls img {
+    max-width: 80%;
+    margin: 20px auto;
+    display: block;
+  }
+  .section {
+    margin-left: 0;
+    text-align: center;
+  }
+  .tittle {
+    margin: 0;
+    font-size: 40px;
+  }
+  .btnn {
+    margin: 30px auto;
+    display: block;
+  }
+  .button, .btton {
+    margin: 15px auto;
+    display: block;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .left h1 {
+    font-size: 42px;
+    line-height: 1.1;
+  }
+  .text {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+  .headlin h1, .headlin h2 {
+    font-size: 28px;
+    text-align: center;
+    padding: 0 10px;
+  }
+  .footer-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footers {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+  </style>
+</head>
+<body>
+<!-- 1-page -->
+  <div class="lang"><a href="#">EN</a> <a href="#">ES</a> <a href="#">FR</a></div>
+  <main class="wrap">
+    <section class="left">
+      <h1 id="hero-title">
+        <span class="word-creativity">Creativity</span>
+        <span style="width:12px"></span>
+        <span class="word-starts">starts</span>
+        <span style="width:12px"></span>
+        <span class="word-here">here</span>
+      </h1>
+      <p class="text">
+        is a public Elementary and Middle School founded on the principle that a rich and vibrant background in the arts is a key catalyst for the academic and social success of all students.
+      </p>
+
+      <div class="actions">
+        <a class="btn btn--primary" href="#elementary">Elementary School</a>
+        <a class="btn btn--secondary" href="#middle">Middle School</a>
+      </div>
+    </section>
+
+    <aside class="right" aria-hidden="false">
+      
+      <img class="hero-img" src="./IMAGE (2).png"
+           alt="">
+    </aside>
+  </main>
+
+
+  <!-- 2-page -->
+      <div class="titles">
+        <div class="headlines">
+            A community of <span class="texts">engaged</span> & <span style="color: yellowgreen;">inspired</span> learnes
+        </div>
+      </div>
+      <div class="p">
+         <p>Students receive daily instruction in theater, dance, music, <br> and visual arts, and lessons in these subjects are integrated <br> into the academic curriculum. We strive to serve as a model  <br>
+            that encourages creativity  and innovation in the classroom <br> and inspires students to develop the intellectual and <br> personal fortitude to realize their dreams.</p>
+        </div>
+ 
+        <!-- 3-page -->
+        <div class="girl">
+            <img src="./IMAGE (3).png" alt="">
+        </div>
+        <div class="school">
+            <h1 style="color: #5BC7E8;">Elementary <span style="display: block; color: black;">school</span> </h1>
+        </div>
+        <div class="middle-text">
+            <p>We believe access to artistic expression has <br> the power to transform lives, and at Bronx <br> Arts Elementary, it is a priority that every <br> student has that opportunity. Our responsive <br> classrooms ensure students are engaged <br> and supported through social-emotional <br> learning and meaningful relationships. <br> Rigorous, engaging, and relevant curriculum <br> encourages students to be creative and  <br>collaborative as they expand their critical <br>
+                 thinking skills to immerse themselves in the <br> discovery of new ideas.</p>
+        </div>
+
+      
+        <!-- 4-page -->
+         <div class="large-text">
+            <h1><span style="color: yellow;">Middle</span> <br>School</h1>
+         </div>
+         <div class="h22">
+            <h2>“We are not a school <br> with a good arts <br> program, we are an  <br>arts school.”</h2>
+         </div>
+         <div class="little-text">
+            <p>Bronx Arts Middle School strives to prepare <br> our students for the future. We create an <br> environment for success by
+                 supporting the <br> holistic needs of our students. We place a <br> strong emphasis on social-emotional <br> learning while challenging students to <br> realize their
+                  potential through our rigorous and relevant curriculum. Bronx <br> Arts attracts highly qualified educators, valuing <br> individual artistry, to surround students with a 
+                   <br>diverse and dynamic staff that inspires them <br> and radiates encouragement. <br> <br> Performance is a norm at Bronx Arts, providing the <br> space for collaboration among students, 
+                 <br> partnerships with local artists and institutions and <br> the opportunity to engage in the artist’s process.</p>
+         </div>
+        <div class="girls">
+            <img src="./IMAGE (4).png" alt="">
+        </div>
+      </div>
+
+
+
+      <!-- 1-page -->
+  <div class="container">
+    <div class="container-img">
+      <img src="./IMAGE.png" alt="Rasm">
+    </div>
+
+    <!-- 2-page -->
+    <div class="section">
+        <div class="right-img">
+          <img src="./IMAGE copy.png" alt="">
+        </div>
+        <div class="left-tittle">
+           <h1 class="tittle">Access to <span class="block">opportunity</span> </h1>
+           <div class="right-title">
+            <p class="pp"> <br> <br> <br>We strongly believe that all students deserve the  opportunity <br>to demonstrate excellence and that all children can and will  <br>succed
+            when given optimal support and guidance. <br><br><br><br><br><br><br></p>
+           </div>
+           <div class="tittles">
+            <p>Our Inclusion Program provides students with special <br> needs the opportunity to be educated in a general 
+              <br> education environment with supplemental support, <br> and our commitment to meeting the instructional 
+             <br> needs of all students is further supported by small <br>
+              class size and a school day that is thirty minutes 
+              <br>longer than that of most schools.</p>
+           </div>
+        </div>
+        <button class="btnn">Meet our leaders</button>
+    </div>
+
+    <!-- 3-page -->
+    <div class="page">
+     <div class="headlin">
+      <h1>You don’t have to be an artist</h1>
+      <h2>to attend Bronx Arts</h2>
+      </div>
+      <div class="buttons">
+        <button class="button">Careers at Bronx Arts</button>
+        <button class="btton">Enroll your Child</button>
+      </div>
+    </div>
+
+    <!-- 4-page -->
+     <div class="footer">
+      <img src="./IMAGE (1).png" alt="">
+     <div class="containers">
+            <div class="footer-row">
+                <div class="footers">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Get Started</a></li>
+                        <li><a href="#">Videos</a></li>
+                    </ul>
+                </div>
+                <div class="footers"> 
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Get Started</a></li>
+                        <li><a href="#">Videos</a></li>
+                    </ul>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html> 
